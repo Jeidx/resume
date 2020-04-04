@@ -1,0 +1,169 @@
+*{
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Comic Neue', cursive;
+ 
+}
+body{
+    background-color: #C3C6CE;
+    width: 100%;
+}
+.content{
+    margin-top: 30px;
+    width: 1200px;
+    height: 1000px;
+    background-color: aqua;
+    display: grid;
+    grid-template-columns:3fr 5fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    box-shadow: 5px 6px 20px 1px rgba(0,0,0,0.75);
+}
+
+.content-photo{
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    grid-column:1/2 ;
+    grid-row:1/2 ;
+    background-color: #313A6D;
+}
+.content-photo img {
+    align-items: center;
+    width: 70%;
+    margin-left: 70px;
+    margin-top: 38px;
+}   
+.content-contact{
+    grid-column:1/2 ;
+    grid-row:2/3 ;
+    background-color: #313A6D;
+    width: 100%; 
+    color: #fff;
+    text-align: center;
+    
+
+}
+.content-contact-title{
+    margin-top: 50px;
+    width: 80%;
+    text-align: center;
+    font-size: 30px;
+    
+}
+.content-contact-links{
+    list-style:none;
+    margin-top:40px;
+    width: 80%;
+    
+}
+.content-contact-links span{
+    margin-left: 10px;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.content-contact-links li{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 20px; 
+    font-size: 24px;
+}
+/* .content-contact-links li:nth-child(1){
+    text-align: start;
+}
+.content-contact-links li:nth-child(2){
+    text-align: start;
+} */
+
+.content-contact-links a img{
+    margin-bottom: -28px;
+    opacity: 0.8;
+    transition: all 0.3s;
+}
+.content-contact-links a img:hover{
+    opacity: 1;
+}
+.content-education{
+    grid-column:1/2 ;
+    grid-row:3/4 ;
+    background-color: #313A6D;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.content-education-title{
+    width: 80%;
+    font-size: 30px;
+}
+.content-education-items{
+    width: 90%;
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 15px;
+    text-align: left;
+}
+.content-education-items li {
+    margin-top: 30px;
+}
+.content-education-items li:last-child {
+    margin-top: 30px;
+    text-align: center;
+}
+.wrapper{
+    grid-column:2/3 ;
+    grid-row:1/2 ;
+    background-color: #fff;    
+}
+.name-developer{
+    margin-top: 40px;
+    width: 80%;
+}
+.name-developer h1{
+    font-size: 40px;
+}
+.name-developer h2 {
+    margin-top: 20px;
+    font-size: 35px;  
+}
+.about-me{
+   margin-top: 60px;
+   width: 80%;
+   background-color: #fff;
+}
+.about-me h2 {
+    font-size: 30px;
+}
+.about-me div {
+    margin-top: 20px;
+}
+.skills{
+    grid-column:2/3 ;
+    grid-row: 2/4;
+    background-color: #fff;
+    width: 100%;
+}
+.skills-title{
+    margin-top: 50px;
+    width: 80%;
+    font-size: 30px;
+}
+.skills-links{
+    margin-top: 55px;
+    width: 80%;
+    list-style: none;  
+}
+.skills-links li {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+}
+.skills-links li p {
+    width: 80px;
+    margin: 0;
+    font-weight: 900;
+}
+.skills-links li progress {
+    width: 420px;
+    margin: 0;
+}
+
+
+

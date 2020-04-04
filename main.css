@@ -2,7 +2,6 @@
     margin: 0 auto;
     padding: 0;
     font-family: 'Comic Neue', cursive;
- 
 }
 body{
     background-color: #C3C6CE;
@@ -12,13 +11,11 @@ body{
     margin-top: 30px;
     width: 1200px;
     height: 1000px;
-    background-color: aqua;
     display: grid;
     grid-template-columns:3fr 5fr;
     grid-template-rows:1fr 1fr 1fr ;
     box-shadow: 5px 6px 20px 1px rgba(0,0,0,0.75);
 }
-
 .content-photo{
     background-size: cover;
     width: 100%;
@@ -40,21 +37,17 @@ body{
     width: 100%; 
     color: #fff;
     text-align: center;
-    
-
 }
 .content-contact-title{
     margin-top: 50px;
     width: 80%;
     text-align: center;
-    font-size: 30px;
-    
+    font-size: 30px;    
 }
 .content-contact-links{
     list-style:none;
     margin-top:40px;
-    width: 80%;
-    
+    width: 80%;    
 }
 .content-contact-links span{
     margin-left: 10px;
@@ -164,6 +157,169 @@ body{
     width: 420px;
     margin: 0;
 }
+@media screen and (max-width: 767px) {
+    .content{
+      margin: 0;
+        width: 100%;
+        height: 1200px;   
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    }
+    .content-photo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+    }
+        .content-photo{
+            background-size: cover;
+            width: 100%;
+            height: 100%;
+            background-color: #313A6D;
+            margin: 0;
+
+        }
+        .content-photo img {
+            align-items: center;
+            width:60%; 
+            margin-left: 20%;
+            margin-top: 2%;
+           
+        }   
+    .content-contact{
+        grid-column:1/2 ;
+        grid-row:6/7 ;
+    }
+        .content-contact-title{
+            margin-top: 50px;
+            width: 80%;
+            text-align: center;
+            font-size: 30px;    
+        }
+        .content-contact-links{
+            list-style:none;
+            margin-top:40px;
+            width: 80%;    
+        }
+        .content-contact-links span{
+            margin-left: 10px;
+            font-size: 25px;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        .content-contact-links li{
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 20px; 
+            font-size: 24px;
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        .content-contact-links a img{
+            margin-bottom: 35px;
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+        .content-contact-links a img:hover{
+            opacity: 1;
+        }
 
 
 
+    .content-education{
+        grid-column:1/2 ;
+        grid-row: 5/6;
+    }
+        .content-education-title{
+            margin-top: 30px;
+            width: 80%;
+            font-size: 30px;
+        }
+        .content-education-items{
+            width: 90%;
+            list-style: none;
+            font-family: 'Ubuntu', sans-serif;
+            margin-top: 15px;
+            text-align: center;
+            font-size: 25px;
+        }
+        .content-education-items li {
+            margin-top: 30px;
+            font-size: 25px;
+        }
+        .content-education-items li:last-child {
+            margin-top: 30px;
+            text-align: center;
+            padding-bottom: 65px;
+            font-size: 30px;
+        }
+    
+    .wrapper{
+        grid-column:1/2 ;
+        grid-row:2/3 ;
+    }
+        .name-developer{
+            margin-top: 30px;
+            width: 80%;
+            text-align: center;
+        }
+        .name-developer h1{
+            font-size: 45px;
+        }
+        .name-developer h2 {
+            margin-top: 20px;
+            font-size: 40px;  
+        }
+    .about-me{
+        grid-column:1/2 ;
+        grid-row:3/4 ;
+    }
+        .about-me h2 {
+            font-size: 35px;
+            text-align: center;
+        }
+        .about-me div {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 25px;
+        }
+
+    .skills{
+        grid-column:1/2 ;
+        grid-row: 4/5; 
+        padding-bottom: 40px;
+    }
+        .skills-title{
+            margin-top: 50px;
+            width: 80%;
+            font-size: 30px;
+            text-align: center;
+        }
+        .skills-links{
+            margin-top: 30px;
+            width: 80%;
+            list-style: none;  
+        }
+        .skills-links li {
+            margin-top: 40px;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .skills-links li p {
+            width: 80px;
+            margin: 0;
+            font-weight: 900;
+            font-size: 20px;
+        }
+        .skills-links li progress {
+            width: 70%;
+            margin: 0;
+        }
+
+
+}    
+ /* <div class="content-photo">
+ <div class="content-contact">
+ <div class="content-education">
+ /* <div class="wrapper">name */
+ /* <div class="about-me">
+ <div class="skills"> */ 
